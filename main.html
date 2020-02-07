@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
     <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css">
     <title>The Witcher</title>
 </head>
 <body>
@@ -36,9 +38,9 @@
         <div class="container">
             <div class="main-content">
                 <div class="content">
-                    <span class="genre">2019, фентези</span>
+                    <span class="genre animated fadeInRight">2019, фентези</span>
 
-                    <div class="raiting">
+                    <div class="raiting animated fadeInRight">
                         <div class="raiting-stars">
                             <img src="./image/star.svg" alt="star" class="star">
                             <img src="./image/star.svg" alt="star" class="star">
@@ -53,17 +55,17 @@
                         </div>
                         <div class="raiting-number">7/10</div>
                     </div>
-                    <h1 class="main-title">Ведьмак</h1>
-                    <p class="main-description">
+                    <h1 class="main-title animated fadeInRight">Ведьмак</h1>
+                    <p class="main-description animated fadeInRight">
                         Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по 
                         Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от
                         чудищ болотных, оборотней и даже заколдованных принцесс.
                     </p>
-                    <button class="start-watching">Смотреть онлайн</button>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=psu7IlDrIpM" class="start-watching animated fadeInRight">Смотреть трейлер</a>
                 </div>
-                <button class="play">
+                <a data-fancybox href="https://www.youtube.com/watch?v=psu7IlDrIpM" class="play">
                     <img src="./image/play.svg" alt="play" class="play-img">
-                </button>
+                </a>
             </div>
 
             <div class="series">
@@ -71,52 +73,52 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="card series-1">
+                            <a data-fancybox href="https://youtu.be/yfbhtG32VLQ?list=PLuND8ZMX5kM_oxsJgtE5mBMsm1XPZdtCE" class="card series-1">
                                 <span class="card-subtitle">Серия #1</span>
                                 <h2 class="card-cubtitle">Начало конца</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-2">
+                            <a data-fancybox href="https://youtu.be/gba22hkyqV0?list=PLuND8ZMX5kM_oxsJgtE5mBMsm1XPZdtCE" class="card series-2">
                                 <span class="card-subtitle">Серия #2</span>
                                 <h2 class="card-cubtitle">Четыре знака</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-3">
+                            <a data-fancybox href="https://youtu.be/oZ9GxL8oL4I" class="card series-3">
                                 <span class="card-subtitle">Серия #3</span>
                                 <h2 class="card-cubtitle">Предательская луна</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-4">
+                            <a data-fancybox href="https://youtu.be/fQSb3gfV84s" class="card series-4">
                                 <span class="card-subtitle">Серия #4</span>
                                 <h2 class="card-cubtitle">Право Неожиданности</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-5">
+                            <a data-fancybox href="https://youtu.be/NPPpsTctl8g" class="card series-5">
                                 <span class="card-subtitle">Серия #5</span>
                                 <h2 class="card-cubtitle">Сдерживаемые аппетиты</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-6">
+                            <a data-fancybox href="https://youtu.be/xaFLdEJ5X78" class="card series-6">
                                 <span class="card-subtitle">Серия #6</span>
                                 <h2 class="card-cubtitle">Редкие виды</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-7">
+                            <a data-fancybox href="https://youtu.be/sxSR5IOQ-fI" class="card series-7">
                                 <span class="card-subtitle">Серия #7</span>
                                 <h2 class="card-cubtitle">Перед падением</h2>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card series-8">
+                            <a data-fancybox href="https://youtu.be/HgkyLPakVro" class="card series-8">
                                 <span class="card-subtitle">Серия #8</span>
                                 <h2 class="card-cubtitle">Нечто большее</h2>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -142,6 +144,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
